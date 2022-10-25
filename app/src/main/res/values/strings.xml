@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gluko</string>
+    <string name="btn_iniciar">Iniciar</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_iniciar_seccion">Iniciar Seccion</string>
+    <string name="btn_registrar_usuario">Registrar Usuario</string>
+</resources>

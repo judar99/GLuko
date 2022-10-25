@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "829771434240",
+    "project_id": "gluko-b9c48",
+    "storage_bucket": "gluko-b9c48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829771434240:android:1208cd76ab97a3a4830be5",
+        "android_client_info": {
+          "package_name": "com.example.gluko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829771434240-jkln0kavpo5mrr8ardtjf3dda2lv2l9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gluko",
+            "certificate_hash": "9eb1d7f8411a3d55c355225b816b39744d22d6f2"
+          }
+        },
+        {
+          "client_id": "829771434240-hm71v43fhaamthpsoddflt8aj2elrmkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp04aqBW8d7DiUAC_eU3QiiEu8R0sQ6d4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829771434240-hm71v43fhaamthpsoddflt8aj2elrmkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
