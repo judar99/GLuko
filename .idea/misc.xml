@@ -9,7 +9,12 @@
         <entry key="..\:/Users/Juan/Desktop/GLuko/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Juan/Desktop/GLuko/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Juan/Desktop/GLuko/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
+<<<<<<< HEAD
         <entry key="..\:/Users/Juan/Desktop/GLuko/app/src/main/res/layout/row_alimentos.xml" value="0.4" />
+=======
+        <entry key="..\:/Users/Usuario/Desktop/Gluko-TI/GLuko/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Usuario/Desktop/Gluko-TI/GLuko/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+>>>>>>> 01bb8f9880c1eec9e1b04635f303c1e5d6d7de1d
       </map>
     </option>
   </component>
