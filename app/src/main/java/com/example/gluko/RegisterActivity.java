@@ -14,6 +14,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
  public class RegisterActivity<mAuth> extends AppCompatActivity {
 
@@ -21,16 +26,28 @@ import com.google.firebase.auth.FirebaseUser;
      private EditText email;
      private EditText password;
      private EditText repeatPassword;
+     private EditText nombre;
+
+     // Write a message to the database
+
+     DatabaseReference myRef;
+
+
+
 
      @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
          setContentView(R.layout.activity_register);
 
+         myRef = FirebaseDatabase.getInstance().getReference();
          mAuth = FirebaseAuth.getInstance();
+         nombre=findViewById(R.id.name);
          email = findViewById(R.id.correo);
          password = findViewById(R.id.Password);
          repeatPassword= findViewById(R.id.RepeatPassword);
+
+
      }
 
      @Override
@@ -53,6 +70,17 @@ import com.google.firebase.auth.FirebaseUser;
                                  // Sign in success, update UI with the signed-in user's information
                                  Toast.makeText(getApplicationContext(),"Usuario Creado", Toast.LENGTH_SHORT).show();
                                  FirebaseUser user = mAuth.getCurrentUser();
+
+                                 Map<String , Object> dataUser = new HashMap<>();
+                                 dataUser.put("nombre", nombre.getText().toString());
+                                 dataUser.put("correo", email.getText().toString());
+                                 dataUser.put("contraseña", password.getText().toString());
+
+
+                                 myRef.child("Usuarios").push().setValue(dataUser);
+
+
+
                                  Intent i = new Intent(getApplicationContext(),MainActivity.class);
                                  startActivity(i);
 
