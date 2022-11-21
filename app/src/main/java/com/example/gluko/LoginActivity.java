@@ -18,8 +18,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private EditText email;
-    private EditText password;
+    private com.google.android.material.textfield.TextInputEditText email;
+    private com.google.android.material.textfield.TextInputEditText password;
 
 
     @Override
