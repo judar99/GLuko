@@ -15,9 +15,11 @@
 
         <LinearLayout
 
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -119,7 +121,19 @@
 
             </LinearLayout>
 
+            <Button
+
+                android:id="@+id/agregar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:onClick="agregar"
+                android:text="Agregar">
+
+            </Button>
+
         </LinearLayout>
+
+
 
     </androidx.cardview.widget.CardView>
 

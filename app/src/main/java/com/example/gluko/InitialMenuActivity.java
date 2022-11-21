@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.gluko.adapter.AdapterAlimentos;
 import com.example.gluko.struct.Alimentos;
@@ -52,6 +54,7 @@ public class InitialMenuActivity extends AppCompatActivity {
                         Alimentos al = snapshot1.getValue(Alimentos.class);
                         list.add(al);
                     }
+
                     adapter.notifyDataSetChanged();
                 }
             }
@@ -75,7 +78,6 @@ public class InitialMenuActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void buscar (String s ){
@@ -88,4 +90,11 @@ public class InitialMenuActivity extends AppCompatActivity {
         AdapterAlimentos adapter = new AdapterAlimentos(alimentos);
         rv.setAdapter(adapter);
     }
+    public void agregar(View view){
+
+        Toast.makeText(InitialMenuActivity.this, "seleecciono", Toast.LENGTH_SHORT).show();
+    }
+
+
+
 }
