@@ -6,4 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".MedicalForms">
 
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="656dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/timeInsulina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Duración insulina"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ratio Insulina"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/sensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sensibilidad (Mg/Dl)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Rango Objetivo (Mg/Dl)"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/AfterEat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Rango depues de comer"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/ICM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Indice de Masa Corporal (ICM)"
+            android:inputType="textPassword" />
+
+        <Spinner
+            android:id="@+id/basal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/speedAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="registeForms"
+            android:text="@string/btn_save_information" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
