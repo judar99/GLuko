@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gluko">
         <activity
+            android:name=".PantallaPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".MedicalForms"
             android:exported="false" />
         <activity
