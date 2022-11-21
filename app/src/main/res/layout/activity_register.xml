@@ -25,6 +25,109 @@
             android:inputType="textPersonName" />
 
         <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellido"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="textPersonName" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:text="Sexo" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Hombre">
+
+
+            </RadioButton>
+
+            <RadioButton
+
+                android:id="@+id/female"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Mujer">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Altura (cm)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Peso (kg)"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="18dp"
+            android:text="Actividad Fisica X semana" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/bot"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="1-2">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/mid"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="3-4">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/top"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="5-6">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <EditText
             android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,11 +25,20 @@ import java.util.Map;
  public class RegisterActivity<mAuth> extends AppCompatActivity {
 
      private FirebaseAuth mAuth;
+
+     private EditText nombre;
+     private EditText lastName;
+     private EditText edad;
+     private RadioButton male;
+     private RadioButton female;
+     private EditText height;
+     private EditText weight;
+     private RadioButton top;
+     private RadioButton mid;
+     private RadioButton bot;
      private EditText email;
      private EditText password;
      private EditText repeatPassword;
-     private EditText nombre;
-
      // Write a message to the database
 
      DatabaseReference myRef;
@@ -44,6 +55,18 @@ import java.util.Map;
          mAuth = FirebaseAuth.getInstance();
          nombre=findViewById(R.id.name);
          email = findViewById(R.id.correo);
+         edad = findViewById(R.id.age);
+         male = (RadioButton) findViewById(R.id.male);
+         female = (RadioButton) findViewById(R.id.female);
+         height = findViewById(R.id.height);
+         weight = findViewById(R.id.weight);
+         top = (RadioButton) findViewById(R.id.top);
+         mid = (RadioButton) findViewById(R.id.mid);
+         bot = (RadioButton) findViewById(R.id.bot);
+
+
+
+
          password = findViewById(R.id.Password);
          repeatPassword= findViewById(R.id.RepeatPassword);
 
@@ -68,14 +91,26 @@ import java.util.Map;
                          public void onComplete(@NonNull Task<AuthResult> task) {
                              if (task.isSuccessful()) {
                                  // Sign in success, update UI with the signed-in user's information
-                                 Toast.makeText(getApplicationContext(),"Usuario Creado", Toast.LENGTH_SHORT).show();
+                                 Toast.makeText(getApplicationContext(),"Registro Exitoso", Toast.LENGTH_SHORT).show();
                                  FirebaseUser user = mAuth.getCurrentUser();
 
                                  Map<String , Object> dataUser = new HashMap<>();
                                  dataUser.put("nombre", nombre.getText().toString());
                                  dataUser.put("correo", email.getText().toString());
                                  dataUser.put("contraseña", password.getText().toString());
+                                 dataUser.put("edad" , edad.getText().toString());
 
+                                 if (male.isChecked()==true){
+                                     dataUser.put("sexo" , "Masculino");
+                                 }
+                                 else{dataUser.put("sexo" , "Femenino");}
+
+                                 dataUser.put("Peso" , weight.getText().toString());
+                                 dataUser.put("altura" , height.getText().toString());
+
+                                if(top.isChecked()==true){ dataUser.put("actividad" , "Alta"); }
+                                else if (mid.isChecked()==true ){dataUser.put("activdad" , "Media");}
+                                else{dataUser.put("actividad", "baja");}
 
                                  myRef.child("Usuarios").push().setValue(dataUser);
 
