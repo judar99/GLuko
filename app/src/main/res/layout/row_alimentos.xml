@@ -3,22 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffded8"
+    android:background="@color/primaryLightColor"
     android:orientation="vertical">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        app:cardBackgroundColor="#edacc4">
+        android:layout_margin="5dp">
 
         <LinearLayout
-
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="5dp">
 
 
             <LinearLayout
@@ -27,8 +25,9 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="122dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
                     android:text="Alimento:"
                     android:textSize="15dp" />
 
@@ -36,6 +35,7 @@
                     android:id="@+id/ListAlimento"
                     android:layout_width="271dp"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
                     android:textSize="15dp" />
 
 
@@ -47,16 +47,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="122dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
-                    android:text="Carbohidratos (g):"
+                    android:layout_marginTop="5dp"
+                    android:text="Carbohidratos (HC):"
                     android:textSize="15dp" />
 
                 <TextView
                     android:id="@+id/ListCarbohidratos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:layout_marginTop="5dp"
                     android:textSize="15dp" />
 
 
@@ -68,8 +69,9 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="122dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
                     android:text="Proteina (g):"
                     android:textSize="15dp" />
 
@@ -77,6 +79,7 @@
                     android:id="@+id/ListProteina"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:textSize="15dp" />
 
 
@@ -88,8 +91,9 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="122dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
                     android:text="Calorias (kcal):"
                     android:textSize="15dp" />
 
@@ -97,6 +101,7 @@
                     android:id="@+id/ListCaloria"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:textSize="15dp" />
 
 
@@ -108,8 +113,9 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="122dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
                     android:text="Porcion (g):"
                     android:textSize="15dp" />
 
@@ -117,15 +123,16 @@
                     android:id="@+id/ListPorcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:textSize="15dp" />
 
             </LinearLayout>
 
             <Button
-
                 android:id="@+id/agregar"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:onClick="agregar"
                 android:text="Agregar">
 

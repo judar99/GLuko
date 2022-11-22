@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 Toast.makeText(getApplicationContext(), "Autenticacion Exitosa.", Toast.LENGTH_SHORT).show();
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                Intent i = new Intent(getApplicationContext(),InitialMenuActivity.class);
+                                Intent i = new Intent(getApplicationContext(),PantallaPrincipal.class);
                                 startActivity(i);
                             } else {
                                 Toast.makeText(getApplicationContext(), "Fallo la autenticación del usuario.", Toast.LENGTH_SHORT).show();

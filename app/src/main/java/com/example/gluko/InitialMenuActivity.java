@@ -37,7 +37,7 @@ public class InitialMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initial_menu);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("Alimentos");
+        /*reference = FirebaseDatabase.getInstance().getReference().child("Alimentos");
         rv = findViewById(R.id.iv);
         searchView = findViewById(R.id.search);
         lm = new LinearLayoutManager(this);
@@ -76,7 +76,7 @@ public class InitialMenuActivity extends AppCompatActivity {
                 buscar(s);
                 return true;
             }
-        });
+        });*/
 
     }
 
@@ -87,8 +87,8 @@ public class InitialMenuActivity extends AppCompatActivity {
                 alimentos.add(obj);
             }
         }
-        AdapterAlimentos adapter = new AdapterAlimentos(alimentos);
-        rv.setAdapter(adapter);
+        /*AdapterAlimentos adapter = new AdapterAlimentos(alimentos);
+        rv.setAdapter(adapter);*/
     }
     public void agregar(View view){
 
