@@ -44,16 +44,16 @@ public class AdapterAlimentos extends ArrayAdapter<Alimentos> {
         alimentoN.setText(alimento.getNombre());
 
         TextView carbo = view.findViewById(R.id.ListCarbohidratos);
-        carbo.setText(alimento.getCarbohidratos());
+        carbo.setText(String.valueOf(alimento.getCarbohidratos()));
 
         TextView proteina = view.findViewById(R.id.ListProteina);
-        proteina.setText(alimento.getProteina());
+        proteina.setText(String.valueOf(alimento.getProteina()));
 
         TextView caloria = view.findViewById(R.id.ListCaloria);
-        caloria.setText(alimento.getCalorias());
+        caloria.setText(String.valueOf(alimento.getCalorias()));
 
         TextView porcion = view.findViewById(R.id.ListPorcion);
-        porcion.setText(alimento.getPorcion());
+        porcion.setText(String.valueOf(alimento.getPorcion()));
 
         return  view;
     }
