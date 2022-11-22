@@ -94,6 +94,8 @@ import java.util.Map;
                                  Toast.makeText(getApplicationContext(),"Registro Exitoso", Toast.LENGTH_SHORT).show();
                                  FirebaseUser user = mAuth.getCurrentUser();
 
+
+
                                  Map<String , Object> dataUser = new HashMap<>();
                                  dataUser.put("nombre", nombre.getText().toString());
                                  dataUser.put("correo", email.getText().toString());
@@ -114,9 +116,8 @@ import java.util.Map;
 
                                  myRef.child("Usuarios").push().setValue(dataUser);
 
-
-
-                                 Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                                 Intent i = new Intent(getApplicationContext(),MedicalForms.class);
+                                 //i.putExtra("usuario", user);
                                  startActivity(i);
 
                              } else {

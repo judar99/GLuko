@@ -6,4 +6,5 @@
     <string name="btn_registrar_usuario">Registrar Usuario</string>
     <string name="texthintCorreo">Correo</string>
     <string name="texthintContraseña">Contraseña</string>
+    <string name="btn_save_information">Guardar Información</string>
 </resources>
